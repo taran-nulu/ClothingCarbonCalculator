@@ -4,7 +4,7 @@
 .dropdown button{
     background-color: hsl(0, 0%, 80%);
     color: white;
-    padding: 10px 15px;
+    padding: 10px 10px;
     border: none;
     cursor: pointer;
 }
@@ -18,7 +18,7 @@
     display: none;
     position: absolute;
     background-color: hsl(0, 0%, 95%);
-    min-width: 100px;
+    min-width: 50px;
     box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
 }
 .dropdown:hover .content{
