@@ -30,3 +30,18 @@
 .dropdown a:hover{
     background-color: hsl(0, 0%, 90%);
 }
+
+body{
+    margin: 0;
+} 
+
+header{
+    background-color: hsl(0, 0%, 86%);
+    text-align: center;
+    padding: 25px;
+}
+
+.navbar{
+    background-color: hsl(0, 0%, 15%);
+    height: 50px;
+}
