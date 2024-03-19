@@ -117,5 +117,5 @@ function displaySelection() {
                 CarbonReleased = fabricUsed * 5.235;
         }
     }
-    document.getElementById("Output1").textContent = CarbonReleased.toFixed(2);
+    document.getElementById("Output1").textContent = CarbonReleased.toFixed(7);
 }
