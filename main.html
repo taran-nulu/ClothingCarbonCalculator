@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <style> 
@@ -16,9 +16,7 @@
 </head>
 <body>
     <header>
-        <h2>Clothing Carbon Calculator</h2>
-        <!-- <h2> Input </h2>
-        <h2> Output </h2> -->
+        <h1 style="font-size: 75px; color: #aaffa2;">Clothing Carbon Calculator</h1>
     </header>
 
     <nav class="navbar">
@@ -27,12 +25,14 @@
 
     <main>
         <aside>
-            <h2>Input</h2>
-        </aside>
+            <marquee direction="left" scrollamount="6">Scrolling text here</marquee>
+            <h2 style="text-align:left;">
+                Input
+                <span style="float:right;">
+                    Output
+                </span>
+            </h2>
 
-        <section>
-            <h2>Output</h2>
-        </section>
     </main>
 
     <div class="dropdown">
@@ -70,4 +70,168 @@
 
 
 </body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="VarStore.js">
+
+    </script>
+
+</head>
+
+<form> 
+    <body>
+        <h1>Carbon Calculator</h1>
+    
+        <div class="input-section">
+            <label for="clothing-type">Clothing Type:</label>
+            <select id="clothing-type" name = "clothing">
+                <option value="">Select</option>
+                <option value="Shirt">Shirt</option>
+                <option value="Pants">Pants</option>
+                <option value="Socks">Socks</option>
+            </select>
+        </div>
+    
+        <div class="input-section">
+            <label for="size">Size:</label>
+            <select id="size">
+                <option value="">Select</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+        </div>
+    
+        <button type="button" onclick="displaySelection()">Show Selection</button>
+    </body>
+</form>
+
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style> 
+        h1 {text-align: center;}
+        body {
+            font-family: Tahoma, sans-serif;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing</title>
+    <link rel="stylesheet" href="DropDownMenu.css">
+    <script type="text/javascript" src="VarStore.js"></script>
+</head>
+<form>
+    <body>
+        <header>
+            <h1 style="font-size: 75px; color: #aaffa2;">Clothing Carbon Calculator</h1>
+            <!-- <h2> Input </h2>
+            <h2> Output </h2> -->
+        </header>
+
+        <nav class="navbar">
+
+        </nav>
+
+        <main>
+            <aside>
+                <marquee direction="left" scrollamount="10"> 💀 💀 💀 </marquee>
+                <!--
+                <h2 style="float:center;">Input
+
+                    <span style="float:right;">
+                        Output
+                    </span>
+                </h2>
+            -->
+
+        </main>
+
+        <table class="center">
+            <tr>
+                <th>Input</th>
+                <th>Output</th>
+            </tr>
+            <tr>
+                <td id="Input1">
+                    <label for="clothing-type">Clothing Type:</label>
+                    <select id="clothing-type" name = "clothing">
+                        <option value="">Select</option>
+                        <option value="Shirt">Shirt</option>
+                        <option value="Pants">Pants</option>
+                        <option value="Socks">Socks</option>
+                    </select>
+                    <br/>
+                    <label for="size">Size:</label>
+                    <select id="size">
+                        <option value="">Select</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <br/>
+                    <button type="button" onclick="displaySelection()">Show Selection</button>
+                </td>
+                <td id="Output1">
+                    
+                </td>
+            </tr>
+        </table>
+<!--
+        <div class="input-section">
+            <label for="clothing-type">Clothing Type:</label>
+            <select id="clothing-type" name = "clothing">
+                <option value="">Select</option>
+                <option value="Shirt">Shirt</option>
+                <option value="Pants">Pants</option>
+                <option value="Socks">Socks</option>
+            </select>
+        </div>
+
+        <div class="input-section">
+            <label for="size">Size:</label>
+            <select id="size">
+                <option value="">Select</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+        </div>
+
+        <!-- <div class="input-section">
+            <label for="size">Material:</label>
+            <select id="size">
+                <option value="">Select</option>
+                <option value="Cellulosic Fiber">Cellulosic Fiber</option>
+                <option value="Wool">Wool</option>
+                <option value="Cotton">Cotton</option>
+                <option value="Silk">Silk</option>
+                <option value="Leather">Leather</option>
+                <option value="Denim">Denim</option>
+            </select>
+        </div> 
+            <button type="button" onclick="displaySelection()">Show Selection</button>
+    -->
+    </body>
+</form>
 </html>

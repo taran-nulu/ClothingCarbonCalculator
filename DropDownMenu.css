@@ -36,12 +36,31 @@ body{
 } 
 
 header{
-    background-color: hsl(0, 0%, 86%);
+    background-color: hsl(118, 94%, 7%);
     text-align: center;
-    padding: 25px;
+    padding: 10px;
 }
 
 .navbar{
-    background-color: hsl(0, 0%, 15%);
+    background-color: rgb(98, 205, 98);
     height: 50px;
 }
+
+body{
+    background-color: rgb(255, 255, 255)
+
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  table {
+    border-collapse: separate;
+    border-spacing: 75px 0;
+  }
+  
+  td {
+    padding: 10px 0;
+  }
