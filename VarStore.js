@@ -1,13 +1,3 @@
-// function VarStore() {
-//     var f1 = document.getElementById("A1").classList.toggle("show");
-//     alert(document.getElementById("A1").selectedIndex);
-//     var container = document.getElementById('A1');
-//     var numberOfDivs = container.children.length;
-//     var length = container.childNodes.length;
-// alert(length);
-// }
-
-
 document.getElementById("calculate-btn").addEventListener("click", function() {
     var clothingType = document.getElementById("clothing-type").value;
     var size = document.getElementById("size").value;
@@ -28,8 +18,8 @@ function calculateCarbonFootprint(clothingType, size, material) {
 function displaySelection() {
     const clothingType = document.getElementById("clothing-type").value;
     const size = document.getElementById("size").value;
-    const selectedValues = `You selected ${size} ${clothingType}.`;
-
+    const material = document.getElementById("material").value; 
+    
     var fabricUsed = 0;
     if (clothingType == "Shirt" && size == "XS") {
         fabricUsed = 1.15;
@@ -76,25 +66,12 @@ function displaySelection() {
     if (clothingType == "Socks" && size == "XL") {
         fabricUsed = 0.45;
     }
-    //alert (fabricUsed);
-
-
-//function calculate(fabricUsed, clothingType) {
-//     var CarbonReleased = 0;
-//     if (clothingType == "Shirt") {
-//         CarbonReleased = ((fabricUsed * 0.65) * 3.2) + ((fabricUsed * 0.35) * 4.15);
-//     } else if (clothingType == "Pants") {
-//         CarbonReleased = fabricUsed * 5.235;
-// }
-
-//     document.getElementById("Output1").textContent = CarbonReleased.toFixed(2);
-
-
 
     var CarbonReleased = 0;
+
     if (clothingType == "Shirt") {
         if (material == "Cotton"){
-        CarbonReleased = fabricUsed * 4.15;
+            CarbonReleased = fabricUsed * 4.15;
         }
         else if (material == "Wool"){
             CarbonReleased = fabricUsed * 6.945;
@@ -105,12 +82,12 @@ function displaySelection() {
         else if (material == "Leather"){
             CarbonReleased = fabricUsed * 17;
         }else if (clothingType == "Denim") {
-        CarbonReleased = fabricUsed * 5.235;
+            CarbonReleased = fabricUsed * 5.235;
     }
     }
     else if (clothingType == "Pants"){
         if (material == "Cotton"){
-            CarbonReleased = fabricUsed * 4.15;
+                CarbonReleased = fabricUsed * 4.15;
             }
             else if (material == "Wool"){
                 CarbonReleased = fabricUsed * 6.945;
@@ -121,12 +98,12 @@ function displaySelection() {
             else if (material == "Leather"){
                 CarbonReleased = fabricUsed * 17;
             }else if (clothingType == "Denim") {
-            CarbonReleased = fabricUsed * 5.235;
+                CarbonReleased = fabricUsed * 5.235;
         }
     }
     else if(clothingType == "Socks"){
         if (material == "Cotton"){
-            CarbonReleased = fabricUsed * 4.15;
+                CarbonReleased = fabricUsed * 4.15;
             }
             else if (material == "Wool"){
                 CarbonReleased = fabricUsed * 6.945;
@@ -137,8 +114,8 @@ function displaySelection() {
             else if (material == "Leather"){
                 CarbonReleased = fabricUsed * 17;
             }else if (clothingType == "Denim") {
-            CarbonReleased = fabricUsed * 5.235;
+                CarbonReleased = fabricUsed * 5.235;
         }
     }
     document.getElementById("Output1").textContent = CarbonReleased.toFixed(2);
-    }
+}
